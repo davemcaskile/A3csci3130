@@ -8,7 +8,7 @@
     <EditText
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:id="@+id/name"
+        android:id="@+id/readname"
         android:hint = "Name"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toRightOf="parent"
@@ -17,15 +17,51 @@
         android:layout_marginStart="8dp" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/readaddress"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:hint="e-mail"
+        android:hint="Address"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/readname"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/readnumber"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readaddress" />
+
+    <EditText
+        android:id="@+id/readprovince"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Province"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readnumber" />
+
+    <EditText
+        android:id="@+id/readtype"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Primary Business Type"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/readprovince"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/updateButton"
@@ -33,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Update Data"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/readtype"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="8dp"
@@ -45,7 +81,7 @@
         android:layout_height="wrap_content"
         android:text="Erase Contact"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/readtype"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="8dp"
